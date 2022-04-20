@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/paymentDataFragment">
+    <fragment
+        android:id="@+id/paymentDataFragment"
+        android:name="com.noobshubham.expaymenttwo.PaymentDataFragment"
+        android:label="Payment Data"
+        tools:layout="@layout/fragment_payment_data" >
+        <action
+            android:id="@+id/action_paymentDataFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.noobshubham.expaymenttwo.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+</navigation>
